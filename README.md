@@ -63,19 +63,3 @@ This project is a web-based platform designed to manage the internal library of 
    -Open your web browser and go to http://localhost:8501
 
 
-### Project Stucture
-
-internal-library-management-system/
-│
-├── app/
-│   ├── main.py            # FastAPI entry point
-│   ├── frontend.py        # Streamlit frontend
-│   ├── models.py          # Data models for DynamoDB
-│   ├── routes/            # API route definitions
-│   ├── services/          # Business logic and services
-│   ├── utils/             # Utility functions
-│   └── templates/         # Streamlit templates
-│
-├── requirements.txt       # Python dependencies
-├── README.md              # Project documentation
-└── .gitignore             # Git ignore file
