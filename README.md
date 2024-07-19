@@ -1,65 +1,55 @@
-# Internal Library Management System
+# Sistema de Gerenciamento de Biblioteca Interna
 
-## Description
-This project is a web-based platform designed to manage the internal library of a company. It allows users to register, view, and track the status of books (available or loaned). Each book has a profile page displaying detailed information, including a summary and loan history. Users can also reserve books and join a waiting list for loaned books. The platform leverages AWS infrastructure, utilizing DynamoDB for database management and a serverless architecture for scalability and performance. The frontend is built with Streamlit for simplicity, and the backend is implemented using FastAPI.
+## Descrição
+Este projeto é uma plataforma web projetada para gerenciar a biblioteca interna de uma empresa. Permite que os usuários registrem, visualizem e acompanhem o status dos livros (disponíveis ou emprestados). Cada livro possui uma página de perfil exibindo informações detalhadas, incluindo um resumo e histórico de empréstimos. Os usuários também podem reservar livros e entrar em uma lista de espera para livros emprestados. A plataforma utiliza a infraestrutura da AWS, utilizando o DynamoDB para gerenciamento do banco de dados e uma arquitetura serverless para escalabilidade e desempenho. O frontend é construído com Streamlit para simplicidade, e o backend é implementado usando FastAPI.
 
-## Features
-- Register and edit book information (title, author, category)
-- View the status of books (available or loaned)
-- Book profile page with details and loan history
-- Reserve books and join a waiting list
-- Authentication using AWS Cognito
-- Serverless architecture with AWS Lambda and API Gateway
-- Database management using DynamoDB
+## Funcionalidades
+- Registrar e editar informações do livro (título, autor, categoria)
+- Visualizar o status dos livros (disponíveis ou emprestados)
+- Página de perfil do livro com detalhes e histórico de empréstimos
+- Reservar livros e entrar em uma lista de espera
+- Autenticação usando AWS Cognito
+- Arquitetura serverless com AWS Lambda e API Gateway
+- Gerenciamento de banco de dados usando DynamoDB
 
-## Tech Stack
+## Stack Tecnológico
 - **Frontend**: Streamlit
 - **Backend**: FastAPI
-- **Database**: DynamoDB
-- **Authentication**: AWS Cognito
-- **Infrastructure**: AWS Lambda, API Gateway, CloudWatch
-- **Version Control**: GitHub
+- **Banco de Dados**: DynamoDB
+- **Autenticação**: AWS Cognito
+- **Infraestrutura**: AWS Lambda, API Gateway, CloudWatch
+- **Controle de Versão**: GitHub
 
-## Getting Started
+## Começando
 
-### Prerequisites
+### Pré-requisitos
 - Python 3.7+
-- AWS Account
-- AWS CLI configured
+- Conta AWS
+- AWS CLI configurado
 - Git
 
-### Installation
-1. **Clone the repository:**
+### Instalação
+1. **Clone o repositório:**
    ```bash
    git clone https://github.com/yourusername/internal-library-management-system.git
    cd internal-library-management-system
+
    
-2. **Clone the repository:**
+2. **Crie e ative um ambiente virtual:**
    ```bash
    python -m venv venv
     source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
 
-3. **Install the required packages:**
+3. **Instale os pacotes necessários:**
    ```bash
    pip install -r requirements.txt
 
-4.  Set up AWS resources:
+4.  **Configure os recursos da AWS:**
 
-    -Configure DynamoDB tables
-    -Set up AWS Cognito for user authentication
-    -Deploy AWS Lambda functions and API Gateway
+ - Configure as tabelas DynamoDB
+ - Configure o AWS Cognito para autenticação de usuários
+ - Implemente as funções AWS Lambda e o API Gateway
 
-### Running the Application
-1. **Start the FastAPI server:**
-   ```bash
-   uvicorn app.main:app --reload
-
-2. **Run the streamlit front-end:**
-   ```bash
-     streamlit run app/frontend.py
-
-3. **Access the Application:**
-   -Open your web browser and go to http://localhost:8501
 
 
